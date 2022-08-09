@@ -1,0 +1,17 @@
+a:link {
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+    background-color: #4fe2d1;
+}
+button {
+    background-color: #1B998B;
+    color: white;
+}
+
+
+/*# sourceMappingURL=/OnlineSurvey.9ad09f98.css.map */
