@@ -1,3 +1,4 @@
+let userSurveyData = [];
 let survey = {
 
 }
@@ -546,6 +547,13 @@ let saveForm = document.getElementById("saveForm");
 let saveQuestionBtn = document.createElement('button');
 saveQuestionBtn.innerText = "Create Survey";
 saveQuestionBtn.addEventListener('click', () => {
-    console.log(survey);
-})
+    let title = document.getElementById('title');
+    let surveyData = {
+        title: title.value,
+        data: survey
+    };
+    userSurveyData.push(surveyData);
+    localStorage.setItem("userSurveyData", JSON.stringify(userSurveyData));
+    console.log(JSON.parse(localStorage.getItem("userSurveyData")));
+});
 saveForm.appendChild(saveQuestionBtn);
